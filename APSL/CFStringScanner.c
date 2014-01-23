@@ -34,9 +34,9 @@
 #include <string.h>
 
 CF_INLINE UniChar __CFStringGetCharacterFromInlineBufferAux(CFStringInlineBuffer *buf, CFIndex idx) {
-    if (buf->directBuffer) {
+    if (buf->directUniCharBuffer) {
 	if (idx < 0 || idx >= buf->rangeToBuffer.length) return 0xFFFF;
-        return buf->directBuffer[idx + buf->rangeToBuffer.location];
+        return buf->directUniCharBuffer[idx + buf->rangeToBuffer.location];
     }
     if (idx >= buf->bufferedRangeEnd || idx < buf->bufferedRangeStart) {
 	if (idx < 0 || idx >= buf->rangeToBuffer.length) return 0xFFFF;
