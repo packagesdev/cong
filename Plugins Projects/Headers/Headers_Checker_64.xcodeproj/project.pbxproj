@@ -251,7 +251,6 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -268,7 +267,6 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};

@@ -281,7 +281,6 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -299,7 +298,6 @@
 					"-undefined",
 					dynamic_lookup,
 				);
-				SDKROOT = macosx10.7;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
