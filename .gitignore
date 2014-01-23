@@ -19,3 +19,11 @@ DerivedData
 
 #CocoaPods
 Pods
+
+Plugins Projects/InfoPlist/InfoPlist_Checker_64.xcodeproj/stephane.mode1
+
+Plugins Projects/InfoPlist/InfoPlist_Checker_64.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+
+*.xcworkspacedata
+
+*.mode1
