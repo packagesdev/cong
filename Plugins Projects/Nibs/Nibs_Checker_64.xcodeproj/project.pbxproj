@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		F438AF8A142E81D1001FBE87 /* BMNibButtonCheckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F438AF89142E81D1001FBE87 /* BMNibButtonCheckerManager.m */; };
+		F44509F0188F336E00AD8F6A /* BM_OSX_NSBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F44509EF188F336E00AD8F6A /* BM_OSX_NSBox.m */; };
+		F457FF5618904F7E00666C93 /* BM_OSX_NSScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F457FF5518904F7E00666C93 /* BM_OSX_NSScrollView.m */; };
+		F457FF5918904FF200666C93 /* BM_OSX_NSClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = F457FF5818904FF200666C93 /* BM_OSX_NSClipView.m */; };
+		F457FF60189051BF00666C93 /* BM_OSX_NSLocalizableString.m in Sources */ = {isa = PBXBuildFile; fileRef = F457FF5F189051BF00666C93 /* BM_OSX_NSLocalizableString.m */; };
+		F4A6C9DB1319367900B0BF8C /* BM_OSX_ArchivedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9D01319367900B0BF8C /* BM_OSX_ArchivedObject.m */; };
+		F4A6C9DC1319367900B0BF8C /* BM_OSX_NSCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9D21319367900B0BF8C /* BM_OSX_NSCustomObject.m */; };
+		F4A6C9DD1319367900B0BF8C /* BM_OSX_NSIBObjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9D41319367900B0BF8C /* BM_OSX_NSIBObjectData.m */; };
+		F4A6C9DE1319367900B0BF8C /* BM_OSX_NSMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9D61319367900B0BF8C /* BM_OSX_NSMenu.m */; };
+		F4A6C9DF1319367900B0BF8C /* BM_OSX_NSMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9D81319367900B0BF8C /* BM_OSX_NSMenuItem.m */; };
+		F4A6C9E313193A8400B0BF8C /* BMNibMenuCheckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9E213193A8400B0BF8C /* BMNibMenuCheckerManager.m */; };
+		F4A6C9E613193AA700B0BF8C /* BMNibObjectCheckerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6C9E513193AA700B0BF8C /* BMNibObjectCheckerManager.m */; };
+		F4A6CB8613194B4C00B0BF8C /* BMNibKeyedUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6CB8513194B4C00B0BF8C /* BMNibKeyedUnarchiver.m */; };
+		F4A6CC021319513D00B0BF8C /* BM_OSX_ClassWapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A6CC011319513D00B0BF8C /* BM_OSX_ClassWapper.m */; };
+		F4AF10031442324300F4989E /* BM_OSX_NSButtonImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AF10021442324300F4989E /* BM_OSX_NSButtonImageSource.m */; };
+		F4B0198B133FEAC900353DCE /* BM_OSX_NSWindowTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B0198A133FEAC900353DCE /* BM_OSX_NSWindowTemplate.m */; };
+		F4B019DD133FF0DB00353DCE /* BM_OSX_NSDrawer.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B019DC133FF0DB00353DCE /* BM_OSX_NSDrawer.m */; };
+		F4B019E8133FF2B100353DCE /* BM_OSX_NSCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B019E7133FF2B100353DCE /* BM_OSX_NSCustomView.m */; };
+		F4B0F3DB142FAD370078417F /* BM_OSX_NSMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B0F3DA142FAD370078417F /* BM_OSX_NSMatrix.m */; };
+		F4B0F3DE142FB2580078417F /* BM_OSX_NSTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B0F3DD142FB2580078417F /* BM_OSX_NSTabView.m */; };
+		F4B0F3E1142FB29E0078417F /* BM_OSX_NSTabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B0F3E0142FB29E0078417F /* BM_OSX_NSTabViewItem.m */; };
+		F4B0F78C1310366E00819BE6 /* BMNibCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B0F78B1310366E00819BE6 /* BMNibCheckerController.m */; };
+		F4B9BD091517913C0097E0E3 /* BM_OSX_NSPopUpButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9BD081517913C0097E0E3 /* BM_OSX_NSPopUpButton.m */; };
+		F4B9BD0E151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B9BD0D151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.m */; };
+		F4EB5EAA131EEF0900F806D4 /* BM_OSX_NSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EA9131EEF0900F806D4 /* BM_OSX_NSWindow.m */; };
+		F4EB5EAD131EF0C900F806D4 /* BM_OSX_NSView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EAC131EF0C900F806D4 /* BM_OSX_NSView.m */; };
+		F4EB5EB0131EF14F00F806D4 /* BM_OSX_NSControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EAF131EF14F00F806D4 /* BM_OSX_NSControl.m */; };
+		F4EB5EB3131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EB2131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.m */; };
+		F4EB5EB6131EF24B00F806D4 /* BM_OSX_NSActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EB5131EF24B00F806D4 /* BM_OSX_NSActionCell.m */; };
+		F4EB5EB9131EF2C700F806D4 /* BM_OSX_NSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EB8131EF2C700F806D4 /* BM_OSX_NSCell.m */; };
+		F4EB5EDF131EF3F900F806D4 /* BM_OSX_NSButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EDE131EF3F900F806D4 /* BM_OSX_NSButtonCell.m */; };
+		F4EB5EE2131EF43B00F806D4 /* BM_OSX_NSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EE1131EF43B00F806D4 /* BM_OSX_NSButton.m */; };
+		F4EB5EE5131EF45B00F806D4 /* BM_OSX_NSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5EE4131EF45B00F806D4 /* BM_OSX_NSTextField.m */; };
+		F4EB5F1A131EF74600F806D4 /* BM_OSX_NSResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5F19131EF74600F806D4 /* BM_OSX_NSResponder.m */; };
+		F4EB5F75131EFE9100F806D4 /* BM_OSX_NSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5F74131EFE9100F806D4 /* BM_OSX_NSTableView.m */; };
+		F4EB5F81131EFF9C00F806D4 /* BM_OSX_NSTableColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5F80131EFF9C00F806D4 /* BM_OSX_NSTableColumn.m */; };
+		F4EB5F8C131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EB5F8B131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* Nib.checker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Nib.checker; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40009EC12AB008100578ACD /* BMFilesHierarchyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMFilesHierarchyUtilities.h; path = ../../BMFilesHierarchyUtilities.h; sourceTree = SOURCE_ROOT; };
+		F401237912AC241D007FD3A2 /* BMBundleTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMBundleTypes.h; path = ../../BMBundleTypes.h; sourceTree = SOURCE_ROOT; };
+		F40D6A7112A858EE008D957A /* BMReportingConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMReportingConstants.h; path = ../../BMReportingConstants.h; sourceTree = SOURCE_ROOT; };
+		F40D6BA012A86938008D957A /* BMReportingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMReportingUtilities.h; path = ../../BMReportingUtilities.h; sourceTree = SOURCE_ROOT; };
+		F419471C129F230600A6D8CD /* BMQualityPluginController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMQualityPluginController.h; path = ../../BMQualityPluginController.h; sourceTree = SOURCE_ROOT; };
+		F4194779129F251E00A6D8CD /* BMCheckerController_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMCheckerController_Prefix.pch; path = ../BMCheckerController_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		F438AF88142E81D1001FBE87 /* BMNibButtonCheckerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNibButtonCheckerManager.h; sourceTree = "<group>"; };
+		F438AF89142E81D1001FBE87 /* BMNibButtonCheckerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNibButtonCheckerManager.m; sourceTree = "<group>"; };
+		F44509EE188F336E00AD8F6A /* BM_OSX_NSBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSBox.h; sourceTree = "<group>"; };
+		F44509EF188F336E00AD8F6A /* BM_OSX_NSBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSBox.m; sourceTree = "<group>"; };
+		F457FF5418904F7E00666C93 /* BM_OSX_NSScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSScrollView.h; sourceTree = "<group>"; };
+		F457FF5518904F7E00666C93 /* BM_OSX_NSScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSScrollView.m; sourceTree = "<group>"; };
+		F457FF5718904FF200666C93 /* BM_OSX_NSClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSClipView.h; sourceTree = "<group>"; };
+		F457FF5818904FF200666C93 /* BM_OSX_NSClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSClipView.m; sourceTree = "<group>"; };
+		F457FF5E189051BF00666C93 /* BM_OSX_NSLocalizableString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSLocalizableString.h; sourceTree = "<group>"; };
+		F457FF5F189051BF00666C93 /* BM_OSX_NSLocalizableString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSLocalizableString.m; sourceTree = "<group>"; };
+		F4A6C9CF1319367900B0BF8C /* BM_OSX_ArchivedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_ArchivedObject.h; sourceTree = SOURCE_ROOT; };
+		F4A6C9D01319367900B0BF8C /* BM_OSX_ArchivedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_ArchivedObject.m; sourceTree = SOURCE_ROOT; };
+		F4A6C9D11319367900B0BF8C /* BM_OSX_NSCustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSCustomObject.h; sourceTree = SOURCE_ROOT; };
+		F4A6C9D21319367900B0BF8C /* BM_OSX_NSCustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSCustomObject.m; sourceTree = SOURCE_ROOT; };
+		F4A6C9D31319367900B0BF8C /* BM_OSX_NSIBObjectData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSIBObjectData.h; sourceTree = SOURCE_ROOT; };
+		F4A6C9D41319367900B0BF8C /* BM_OSX_NSIBObjectData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSIBObjectData.m; sourceTree = SOURCE_ROOT; };
+		F4A6C9D51319367900B0BF8C /* BM_OSX_NSMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSMenu.h; sourceTree = "<group>"; };
+		F4A6C9D61319367900B0BF8C /* BM_OSX_NSMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSMenu.m; sourceTree = "<group>"; };
+		F4A6C9D71319367900B0BF8C /* BM_OSX_NSMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSMenuItem.h; sourceTree = "<group>"; };
+		F4A6C9D81319367900B0BF8C /* BM_OSX_NSMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSMenuItem.m; sourceTree = "<group>"; };
+		F4A6C9E113193A8400B0BF8C /* BMNibMenuCheckerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNibMenuCheckerManager.h; sourceTree = "<group>"; };
+		F4A6C9E213193A8400B0BF8C /* BMNibMenuCheckerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNibMenuCheckerManager.m; sourceTree = "<group>"; };
+		F4A6C9E413193AA700B0BF8C /* BMNibObjectCheckerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNibObjectCheckerManager.h; sourceTree = "<group>"; };
+		F4A6C9E513193AA700B0BF8C /* BMNibObjectCheckerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNibObjectCheckerManager.m; sourceTree = "<group>"; };
+		F4A6CB8413194B4C00B0BF8C /* BMNibKeyedUnarchiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNibKeyedUnarchiver.h; sourceTree = "<group>"; };
+		F4A6CB8513194B4C00B0BF8C /* BMNibKeyedUnarchiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNibKeyedUnarchiver.m; sourceTree = "<group>"; };
+		F4A6CC001319513D00B0BF8C /* BM_OSX_ClassWapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_ClassWapper.h; sourceTree = "<group>"; };
+		F4A6CC011319513D00B0BF8C /* BM_OSX_ClassWapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_ClassWapper.m; sourceTree = "<group>"; };
+		F4AF10011442324300F4989E /* BM_OSX_NSButtonImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSButtonImageSource.h; sourceTree = "<group>"; };
+		F4AF10021442324300F4989E /* BM_OSX_NSButtonImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSButtonImageSource.m; sourceTree = "<group>"; };
+		F4B01989133FEAC900353DCE /* BM_OSX_NSWindowTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSWindowTemplate.h; sourceTree = "<group>"; };
+		F4B0198A133FEAC900353DCE /* BM_OSX_NSWindowTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSWindowTemplate.m; sourceTree = "<group>"; };
+		F4B019DB133FF0DB00353DCE /* BM_OSX_NSDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSDrawer.h; sourceTree = "<group>"; };
+		F4B019DC133FF0DB00353DCE /* BM_OSX_NSDrawer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSDrawer.m; sourceTree = "<group>"; };
+		F4B019E6133FF2B100353DCE /* BM_OSX_NSCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSCustomView.h; sourceTree = "<group>"; };
+		F4B019E7133FF2B100353DCE /* BM_OSX_NSCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSCustomView.m; sourceTree = "<group>"; };
+		F4B0F3D9142FAD370078417F /* BM_OSX_NSMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSMatrix.h; sourceTree = "<group>"; };
+		F4B0F3DA142FAD370078417F /* BM_OSX_NSMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSMatrix.m; sourceTree = "<group>"; };
+		F4B0F3DC142FB2580078417F /* BM_OSX_NSTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTabView.h; sourceTree = "<group>"; };
+		F4B0F3DD142FB2580078417F /* BM_OSX_NSTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTabView.m; sourceTree = "<group>"; };
+		F4B0F3DF142FB29E0078417F /* BM_OSX_NSTabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTabViewItem.h; sourceTree = "<group>"; };
+		F4B0F3E0142FB29E0078417F /* BM_OSX_NSTabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTabViewItem.m; sourceTree = "<group>"; };
+		F4B0F78A1310366E00819BE6 /* BMNibCheckerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMNibCheckerController.h; sourceTree = "<group>"; };
+		F4B0F78B1310366E00819BE6 /* BMNibCheckerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMNibCheckerController.m; sourceTree = "<group>"; };
+		F4B9BD071517913C0097E0E3 /* BM_OSX_NSPopUpButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSPopUpButton.h; sourceTree = "<group>"; };
+		F4B9BD081517913C0097E0E3 /* BM_OSX_NSPopUpButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSPopUpButton.m; sourceTree = "<group>"; };
+		F4B9BD0C151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSPopUpButtonCell.h; sourceTree = "<group>"; };
+		F4B9BD0D151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSPopUpButtonCell.m; sourceTree = "<group>"; };
+		F4EB5EA8131EEF0900F806D4 /* BM_OSX_NSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSWindow.h; sourceTree = "<group>"; };
+		F4EB5EA9131EEF0900F806D4 /* BM_OSX_NSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSWindow.m; sourceTree = "<group>"; };
+		F4EB5EAB131EF0C900F806D4 /* BM_OSX_NSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSView.h; sourceTree = "<group>"; };
+		F4EB5EAC131EF0C900F806D4 /* BM_OSX_NSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSView.m; sourceTree = "<group>"; };
+		F4EB5EAE131EF14F00F806D4 /* BM_OSX_NSControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSControl.h; sourceTree = "<group>"; };
+		F4EB5EAF131EF14F00F806D4 /* BM_OSX_NSControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSControl.m; sourceTree = "<group>"; };
+		F4EB5EB1131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTextFieldCell.h; sourceTree = "<group>"; };
+		F4EB5EB2131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTextFieldCell.m; sourceTree = "<group>"; };
+		F4EB5EB4131EF24B00F806D4 /* BM_OSX_NSActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSActionCell.h; sourceTree = "<group>"; };
+		F4EB5EB5131EF24B00F806D4 /* BM_OSX_NSActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSActionCell.m; sourceTree = "<group>"; };
+		F4EB5EB7131EF2C700F806D4 /* BM_OSX_NSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSCell.h; sourceTree = "<group>"; };
+		F4EB5EB8131EF2C700F806D4 /* BM_OSX_NSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSCell.m; sourceTree = "<group>"; };
+		F4EB5EDD131EF3F900F806D4 /* BM_OSX_NSButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSButtonCell.h; sourceTree = "<group>"; };
+		F4EB5EDE131EF3F900F806D4 /* BM_OSX_NSButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSButtonCell.m; sourceTree = "<group>"; };
+		F4EB5EE0131EF43B00F806D4 /* BM_OSX_NSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSButton.h; sourceTree = "<group>"; };
+		F4EB5EE1131EF43B00F806D4 /* BM_OSX_NSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSButton.m; sourceTree = "<group>"; };
+		F4EB5EE3131EF45B00F806D4 /* BM_OSX_NSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTextField.h; sourceTree = "<group>"; };
+		F4EB5EE4131EF45B00F806D4 /* BM_OSX_NSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTextField.m; sourceTree = "<group>"; };
+		F4EB5F18131EF74600F806D4 /* BM_OSX_NSResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSResponder.h; sourceTree = "<group>"; };
+		F4EB5F19131EF74600F806D4 /* BM_OSX_NSResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSResponder.m; sourceTree = "<group>"; };
+		F4EB5F73131EFE9100F806D4 /* BM_OSX_NSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTableView.h; sourceTree = "<group>"; };
+		F4EB5F74131EFE9100F806D4 /* BM_OSX_NSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTableView.m; sourceTree = "<group>"; };
+		F4EB5F7F131EFF9C00F806D4 /* BM_OSX_NSTableColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTableColumn.h; sourceTree = "<group>"; };
+		F4EB5F80131EFF9C00F806D4 /* BM_OSX_NSTableColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTableColumn.m; sourceTree = "<group>"; };
+		F4EB5F8A131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BM_OSX_NSTableHeaderCell.h; sourceTree = "<group>"; };
+		F4EB5F8B131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BM_OSX_NSTableHeaderCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ICRequirementCPU */ = {
+			isa = PBXGroup;
+			children = (
+				F46CB3D60E8AF7F300F0B8E2 /* Common Source */,
+				F409B0C70E8C4BCD005D9E86 /* Plugin SDK */,
+				F4A471A313170DE20085DA72 /* FakeMacOSXClasses */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = ICRequirementCPU;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C9E413193AA700B0BF8C /* BMNibObjectCheckerManager.h */,
+				F4A6C9E513193AA700B0BF8C /* BMNibObjectCheckerManager.m */,
+				F4A6C9E113193A8400B0BF8C /* BMNibMenuCheckerManager.h */,
+				F4A6C9E213193A8400B0BF8C /* BMNibMenuCheckerManager.m */,
+				F438AF88142E81D1001FBE87 /* BMNibButtonCheckerManager.h */,
+				F438AF89142E81D1001FBE87 /* BMNibButtonCheckerManager.m */,
+				F4B0F78A1310366E00819BE6 /* BMNibCheckerController.h */,
+				F4B0F78B1310366E00819BE6 /* BMNibCheckerController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Nib.checker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F4194779129F251E00A6D8CD /* BMCheckerController_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F409B0C70E8C4BCD005D9E86 /* Plugin SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F419471C129F230600A6D8CD /* BMQualityPluginController.h */,
+			);
+			name = "Plugin SDK";
+			sourceTree = "<group>";
+		};
+		F46CB3D60E8AF7F300F0B8E2 /* Common Source */ = {
+			isa = PBXGroup;
+			children = (
+				F40D6A7112A858EE008D957A /* BMReportingConstants.h */,
+				F40009EC12AB008100578ACD /* BMFilesHierarchyUtilities.h */,
+				F401237912AC241D007FD3A2 /* BMBundleTypes.h */,
+				F40D6BA012A86938008D957A /* BMReportingUtilities.h */,
+			);
+			name = "Common Source";
+			sourceTree = "<group>";
+		};
+		F4A471A313170DE20085DA72 /* FakeMacOSXClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C9CF1319367900B0BF8C /* BM_OSX_ArchivedObject.h */,
+				F4A6C9D01319367900B0BF8C /* BM_OSX_ArchivedObject.m */,
+				F4A6CC001319513D00B0BF8C /* BM_OSX_ClassWapper.h */,
+				F4A6CC011319513D00B0BF8C /* BM_OSX_ClassWapper.m */,
+				F4A6C9D11319367900B0BF8C /* BM_OSX_NSCustomObject.h */,
+				F4A6C9D21319367900B0BF8C /* BM_OSX_NSCustomObject.m */,
+				F4A6C9D31319367900B0BF8C /* BM_OSX_NSIBObjectData.h */,
+				F4A6C9D41319367900B0BF8C /* BM_OSX_NSIBObjectData.m */,
+				F4EB5F18131EF74600F806D4 /* BM_OSX_NSResponder.h */,
+				F4EB5F19131EF74600F806D4 /* BM_OSX_NSResponder.m */,
+				F457FF5E189051BF00666C93 /* BM_OSX_NSLocalizableString.h */,
+				F457FF5F189051BF00666C93 /* BM_OSX_NSLocalizableString.m */,
+				F4EB5EDA131EF3BF00F806D4 /* Menus */,
+				F4EB5EDB131EF3CC00F806D4 /* Views */,
+				F4EB5EDC131EF3DF00F806D4 /* Cells */,
+				F4B019DB133FF0DB00353DCE /* BM_OSX_NSDrawer.h */,
+				F4B019DC133FF0DB00353DCE /* BM_OSX_NSDrawer.m */,
+				F4EB5EA8131EEF0900F806D4 /* BM_OSX_NSWindow.h */,
+				F4EB5EA9131EEF0900F806D4 /* BM_OSX_NSWindow.m */,
+				F4B01989133FEAC900353DCE /* BM_OSX_NSWindowTemplate.h */,
+				F4B0198A133FEAC900353DCE /* BM_OSX_NSWindowTemplate.m */,
+				F4A6CB8413194B4C00B0BF8C /* BMNibKeyedUnarchiver.h */,
+				F4A6CB8513194B4C00B0BF8C /* BMNibKeyedUnarchiver.m */,
+			);
+			name = FakeMacOSXClasses;
+			sourceTree = "<group>";
+		};
+		F4EB5EDA131EF3BF00F806D4 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				F4A6C9D51319367900B0BF8C /* BM_OSX_NSMenu.h */,
+				F4A6C9D61319367900B0BF8C /* BM_OSX_NSMenu.m */,
+				F4A6C9D71319367900B0BF8C /* BM_OSX_NSMenuItem.h */,
+				F4A6C9D81319367900B0BF8C /* BM_OSX_NSMenuItem.m */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
+		F4EB5EDB131EF3CC00F806D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4EB5EAB131EF0C900F806D4 /* BM_OSX_NSView.h */,
+				F4EB5EAC131EF0C900F806D4 /* BM_OSX_NSView.m */,
+				F44509EE188F336E00AD8F6A /* BM_OSX_NSBox.h */,
+				F44509EF188F336E00AD8F6A /* BM_OSX_NSBox.m */,
+				F4B019E6133FF2B100353DCE /* BM_OSX_NSCustomView.h */,
+				F4B019E7133FF2B100353DCE /* BM_OSX_NSCustomView.m */,
+				F4EB5EAE131EF14F00F806D4 /* BM_OSX_NSControl.h */,
+				F4EB5EAF131EF14F00F806D4 /* BM_OSX_NSControl.m */,
+				F4EB5EE0131EF43B00F806D4 /* BM_OSX_NSButton.h */,
+				F4EB5EE1131EF43B00F806D4 /* BM_OSX_NSButton.m */,
+				F4B9BD071517913C0097E0E3 /* BM_OSX_NSPopUpButton.h */,
+				F4B9BD081517913C0097E0E3 /* BM_OSX_NSPopUpButton.m */,
+				F4EB5EE3131EF45B00F806D4 /* BM_OSX_NSTextField.h */,
+				F4EB5EE4131EF45B00F806D4 /* BM_OSX_NSTextField.m */,
+				F4EB5F73131EFE9100F806D4 /* BM_OSX_NSTableView.h */,
+				F4EB5F74131EFE9100F806D4 /* BM_OSX_NSTableView.m */,
+				F4EB5F7F131EFF9C00F806D4 /* BM_OSX_NSTableColumn.h */,
+				F4EB5F80131EFF9C00F806D4 /* BM_OSX_NSTableColumn.m */,
+				F4B0F3D9142FAD370078417F /* BM_OSX_NSMatrix.h */,
+				F4B0F3DA142FAD370078417F /* BM_OSX_NSMatrix.m */,
+				F4B0F3DC142FB2580078417F /* BM_OSX_NSTabView.h */,
+				F4B0F3DD142FB2580078417F /* BM_OSX_NSTabView.m */,
+				F4B0F3DF142FB29E0078417F /* BM_OSX_NSTabViewItem.h */,
+				F4B0F3E0142FB29E0078417F /* BM_OSX_NSTabViewItem.m */,
+				F457FF5418904F7E00666C93 /* BM_OSX_NSScrollView.h */,
+				F457FF5518904F7E00666C93 /* BM_OSX_NSScrollView.m */,
+				F457FF5718904FF200666C93 /* BM_OSX_NSClipView.h */,
+				F457FF5818904FF200666C93 /* BM_OSX_NSClipView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F4EB5EDC131EF3DF00F806D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF10011442324300F4989E /* BM_OSX_NSButtonImageSource.h */,
+				F4AF10021442324300F4989E /* BM_OSX_NSButtonImageSource.m */,
+				F4EB5EB7131EF2C700F806D4 /* BM_OSX_NSCell.h */,
+				F4EB5EB8131EF2C700F806D4 /* BM_OSX_NSCell.m */,
+				F4EB5EB4131EF24B00F806D4 /* BM_OSX_NSActionCell.h */,
+				F4EB5EB5131EF24B00F806D4 /* BM_OSX_NSActionCell.m */,
+				F4EB5EDD131EF3F900F806D4 /* BM_OSX_NSButtonCell.h */,
+				F4EB5EDE131EF3F900F806D4 /* BM_OSX_NSButtonCell.m */,
+				F4B9BD0C151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.h */,
+				F4B9BD0D151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.m */,
+				F4EB5EB1131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.h */,
+				F4EB5EB2131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.m */,
+				F4EB5F8A131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.h */,
+				F4EB5F8B131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Nib_Checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Nib_Checker" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nib_Checker;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = ICRequirementCPU;
+			productReference = 8D5B49B6048680CD000E48DA /* Nib.checker */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Nibs_Checker_64" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* ICRequirementCPU */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Nib_Checker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B0F78C1310366E00819BE6 /* BMNibCheckerController.m in Sources */,
+				F4A6C9DB1319367900B0BF8C /* BM_OSX_ArchivedObject.m in Sources */,
+				F4A6C9DC1319367900B0BF8C /* BM_OSX_NSCustomObject.m in Sources */,
+				F4A6C9DD1319367900B0BF8C /* BM_OSX_NSIBObjectData.m in Sources */,
+				F4A6C9DE1319367900B0BF8C /* BM_OSX_NSMenu.m in Sources */,
+				F4A6C9DF1319367900B0BF8C /* BM_OSX_NSMenuItem.m in Sources */,
+				F4A6C9E313193A8400B0BF8C /* BMNibMenuCheckerManager.m in Sources */,
+				F4A6C9E613193AA700B0BF8C /* BMNibObjectCheckerManager.m in Sources */,
+				F4A6CB8613194B4C00B0BF8C /* BMNibKeyedUnarchiver.m in Sources */,
+				F4A6CC021319513D00B0BF8C /* BM_OSX_ClassWapper.m in Sources */,
+				F4EB5EAA131EEF0900F806D4 /* BM_OSX_NSWindow.m in Sources */,
+				F4EB5EAD131EF0C900F806D4 /* BM_OSX_NSView.m in Sources */,
+				F4EB5EB0131EF14F00F806D4 /* BM_OSX_NSControl.m in Sources */,
+				F4EB5EB3131EF1FD00F806D4 /* BM_OSX_NSTextFieldCell.m in Sources */,
+				F4EB5EB6131EF24B00F806D4 /* BM_OSX_NSActionCell.m in Sources */,
+				F4EB5EB9131EF2C700F806D4 /* BM_OSX_NSCell.m in Sources */,
+				F4EB5EDF131EF3F900F806D4 /* BM_OSX_NSButtonCell.m in Sources */,
+				F4EB5EE2131EF43B00F806D4 /* BM_OSX_NSButton.m in Sources */,
+				F4EB5EE5131EF45B00F806D4 /* BM_OSX_NSTextField.m in Sources */,
+				F4EB5F1A131EF74600F806D4 /* BM_OSX_NSResponder.m in Sources */,
+				F4EB5F75131EFE9100F806D4 /* BM_OSX_NSTableView.m in Sources */,
+				F4EB5F81131EFF9C00F806D4 /* BM_OSX_NSTableColumn.m in Sources */,
+				F4EB5F8C131EFFFF00F806D4 /* BM_OSX_NSTableHeaderCell.m in Sources */,
+				F4B0198B133FEAC900353DCE /* BM_OSX_NSWindowTemplate.m in Sources */,
+				F4B019DD133FF0DB00353DCE /* BM_OSX_NSDrawer.m in Sources */,
+				F4B019E8133FF2B100353DCE /* BM_OSX_NSCustomView.m in Sources */,
+				F438AF8A142E81D1001FBE87 /* BMNibButtonCheckerManager.m in Sources */,
+				F4B0F3DB142FAD370078417F /* BM_OSX_NSMatrix.m in Sources */,
+				F4B0F3DE142FB2580078417F /* BM_OSX_NSTabView.m in Sources */,
+				F4B0F3E1142FB29E0078417F /* BM_OSX_NSTabViewItem.m in Sources */,
+				F4AF10031442324300F4989E /* BM_OSX_NSButtonImageSource.m in Sources */,
+				F4B9BD091517913C0097E0E3 /* BM_OSX_NSPopUpButton.m in Sources */,
+				F4B9BD0E151792A70097E0E3 /* BM_OSX_NSPopUpButtonCell.m in Sources */,
+				F44509F0188F336E00AD8F6A /* BM_OSX_NSBox.m in Sources */,
+				F457FF5618904F7E00666C93 /* BM_OSX_NSScrollView.m in Sources */,
+				F457FF5918904FF200666C93 /* BM_OSX_NSClipView.m in Sources */,
+				F457FF60189051BF00666C93 /* BM_OSX_NSLocalizableString.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Nib;
+				WRAPPER_EXTENSION = checker;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+					ppc,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = Nib;
+				WRAPPER_EXTENSION = checker;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BMCheckerController_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BMCheckerController_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Nib_Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Nibs_Checker_64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

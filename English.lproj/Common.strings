@@ -1,0 +1,19 @@
+"Missing %@ folder" = "Missing %@ folder";
+
+"Missing %@ file" = "Missing %@ file";
+
+"Missing %@ symbolic link" = "Missing %@ symbolic link";
+
+"The %@ file system item must be a folder" = "The %@ file system item must be a folder";
+
+"The %@ file system item must be a file" = "The %@ file system item must be a file";
+
+"The %@ file system item must be a symbolic link" = "The %@ file system item must be a symbolic link";
+
+"The %@ file system item can not be a symbolic link" = "The %@ file system item can not be a symbolic link";
+
+"The file system item referenced by the symbolic link does not exist" = "The file system item referenced by the symbolic link does not exist";
+
+"The reference defined by the symbolic link must be relative" = "The reference defined by the symbolic link must be relative";
+
+"Can not read file" = "Can not read file";

@@ -1,0 +1,53 @@
+//
+// Prefix header for all source files of the 'BiteMe' target in the 'BiteMe' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+// Arithmetics
+
+#ifndef _CGFloatRound
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatRound round
+
+#else
+
+#define _CGFloatRound roundf
+
+#endif
+
+#endif
+
+#ifndef _CGFloatFloor
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatFloor floor
+
+#else
+
+#define _CGFloatFloor floorf
+
+#endif
+
+#endif
+
+
+#ifndef _CGFloatCeil
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatCeil ceil
+
+#else
+
+#define _CGFloatCeil ceilf
+
+#endif
+
+#endif
+

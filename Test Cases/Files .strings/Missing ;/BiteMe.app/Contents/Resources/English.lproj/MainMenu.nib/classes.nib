@@ -1,0 +1,12 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {showAboutBox = id; }; 
+            CLASS = BMApplicationController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

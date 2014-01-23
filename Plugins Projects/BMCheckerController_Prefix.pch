@@ -1,0 +1,85 @@
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifndef MAC_OS_X_VERSION_10_5
+
+#define MAC_OS_X_VERSION_10_5 1050
+
+#endif
+
+// Types
+
+#if MAC_OS_X_VERSION_MAX_ALLOWED < MAC_OS_X_VERSION_10_5
+
+
+#ifndef NSINTEGER_DEFINED
+#define NSINTEGER_DEFINED
+#ifdef __LP64__ || NS_BUILD_32_LIKE_64
+typedef long           NSInteger;
+typedef unsigned long  NSUInteger;
+#define NSIntegerMin   LONG_MIN
+#define NSIntegerMax   LONG_MAX
+#define NSUIntegerMax  ULONG_MAX
+#else
+typedef int            NSInteger;
+typedef unsigned int   NSUInteger;
+#define NSIntegerMin   INT_MIN
+#define NSIntegerMax   INT_MAX
+#define NSUIntegerMax  UINT_MAX
+#endif
+#endif // NSINTEGER_DEFINED
+
+#define numberWithInteger numberWithInt
+
+#define integerValue intValue
+
+typedef float CGFloat;
+
+#endif
+
+// Arithmetics
+
+#ifndef _CGFloatRound
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatRound round
+
+#else
+
+#define _CGFloatRound roundf
+
+#endif
+
+#endif
+
+#ifndef _CGFloatFloor
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatFloor floor
+
+#else
+
+#define _CGFloatFloor floorf
+
+#endif
+
+#endif
+
+
+#ifndef _CGFloatCeil
+
+#if defined(__LP64__) && __LP64__
+
+#define _CGFloatCeil ceil
+
+#else
+
+#define _CGFloatCeil ceilf
+
+#endif
+
+#endif
+

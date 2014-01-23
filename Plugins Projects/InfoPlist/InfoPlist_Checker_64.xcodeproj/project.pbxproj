@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		F40D6A3012A855E2008D957A /* App_InfoPlist_CheckList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F40D6A2F12A855E2008D957A /* App_InfoPlist_CheckList.plist */; };
+		F41ACCAC12ABBD09000B23DB /* Framework_InfoPlist_CheckList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41ACCAB12ABBD09000B23DB /* Framework_InfoPlist_CheckList.plist */; };
+		F41ACCB012ABBD23000B23DB /* PrefPane_InfoPlist_CheckList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F41ACCAF12ABBD23000B23DB /* PrefPane_InfoPlist_CheckList.plist */; };
+		F46CB3DD0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46CB3DC0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.m */; };
+		F4A3A5DB130DDB5B001382E5 /* iOSApp_InfoPlist_CheckList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A3A5DA130DDB5B001382E5 /* iOSApp_InfoPlist_CheckList.plist */; };
+		F4B1477312BE85C9002EBFD8 /* Plugin_InfoPlist_CheckList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4B1477212BE85C9002EBFD8 /* Plugin_InfoPlist_CheckList.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* InfoPlist.checker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfoPlist.checker; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F40006C512AAB98C00578ACD /* BMStringsFileChecker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMStringsFileChecker.h; path = ../../BMStringsFileChecker.h; sourceTree = SOURCE_ROOT; };
+		F40009EC12AB008100578ACD /* BMFilesHierarchyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMFilesHierarchyUtilities.h; path = ../../BMFilesHierarchyUtilities.h; sourceTree = SOURCE_ROOT; };
+		F401237912AC241D007FD3A2 /* BMBundleTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMBundleTypes.h; path = ../../BMBundleTypes.h; sourceTree = SOURCE_ROOT; };
+		F40D6A1712A8557F008D957A /* BMPropertyListFileChecker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMPropertyListFileChecker.h; path = ../../BMPropertyListFileChecker.h; sourceTree = SOURCE_ROOT; };
+		F40D6A2F12A855E2008D957A /* App_InfoPlist_CheckList.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = App_InfoPlist_CheckList.plist; sourceTree = SOURCE_ROOT; };
+		F40D6A7112A858EE008D957A /* BMReportingConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMReportingConstants.h; path = ../../BMReportingConstants.h; sourceTree = SOURCE_ROOT; };
+		F40D6BA012A86938008D957A /* BMReportingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMReportingUtilities.h; path = ../../BMReportingUtilities.h; sourceTree = SOURCE_ROOT; };
+		F419471C129F230600A6D8CD /* BMQualityPluginController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMQualityPluginController.h; path = ../../BMQualityPluginController.h; sourceTree = SOURCE_ROOT; };
+		F4194779129F251E00A6D8CD /* BMCheckerController_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BMCheckerController_Prefix.pch; path = ../BMCheckerController_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		F41ACCAB12ABBD09000B23DB /* Framework_InfoPlist_CheckList.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Framework_InfoPlist_CheckList.plist; sourceTree = SOURCE_ROOT; };
+		F41ACCAF12ABBD23000B23DB /* PrefPane_InfoPlist_CheckList.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = PrefPane_InfoPlist_CheckList.plist; sourceTree = SOURCE_ROOT; };
+		F46CB3DB0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMInfoPlistCheckerController.h; sourceTree = "<group>"; };
+		F46CB3DC0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMInfoPlistCheckerController.m; sourceTree = "<group>"; };
+		F4A3A5DA130DDB5B001382E5 /* iOSApp_InfoPlist_CheckList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = iOSApp_InfoPlist_CheckList.plist; sourceTree = SOURCE_ROOT; };
+		F4A87CE712E224BE003291BB /* BMStringUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMStringUtilities.h; path = ../../BMStringUtilities.h; sourceTree = SOURCE_ROOT; };
+		F4B1477212BE85C9002EBFD8 /* Plugin_InfoPlist_CheckList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Plugin_InfoPlist_CheckList.plist; sourceTree = SOURCE_ROOT; };
+		F4B9BE2112B9777900433A09 /* BMIconsUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMIconsUtilities.h; path = ../../BMIconsUtilities.h; sourceTree = SOURCE_ROOT; };
+		F4DFFDD91320403B0036FC20 /* BMNSStringFormatUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMNSStringFormatUtilities.h; path = ../../BMNSStringFormatUtilities.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ICRequirementCPU */ = {
+			isa = PBXGroup;
+			children = (
+				F46CB3D60E8AF7F300F0B8E2 /* Common Source */,
+				F409B0C70E8C4BCD005D9E86 /* Plugin SDK */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = ICRequirementCPU;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				F40D6A2F12A855E2008D957A /* App_InfoPlist_CheckList.plist */,
+				F41ACCAB12ABBD09000B23DB /* Framework_InfoPlist_CheckList.plist */,
+				F4A3A5DA130DDB5B001382E5 /* iOSApp_InfoPlist_CheckList.plist */,
+				F4B1477212BE85C9002EBFD8 /* Plugin_InfoPlist_CheckList.plist */,
+				F41ACCAF12ABBD23000B23DB /* PrefPane_InfoPlist_CheckList.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F46CB3DB0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.h */,
+				F46CB3DC0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* InfoPlist.checker */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F4194779129F251E00A6D8CD /* BMCheckerController_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F409B0C70E8C4BCD005D9E86 /* Plugin SDK */ = {
+			isa = PBXGroup;
+			children = (
+				F419471C129F230600A6D8CD /* BMQualityPluginController.h */,
+			);
+			name = "Plugin SDK";
+			sourceTree = "<group>";
+		};
+		F46CB3D60E8AF7F300F0B8E2 /* Common Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFFDD91320403B0036FC20 /* BMNSStringFormatUtilities.h */,
+				F40D6A7112A858EE008D957A /* BMReportingConstants.h */,
+				F40D6A1712A8557F008D957A /* BMPropertyListFileChecker.h */,
+				F40006C512AAB98C00578ACD /* BMStringsFileChecker.h */,
+				F4B9BE2112B9777900433A09 /* BMIconsUtilities.h */,
+				F40009EC12AB008100578ACD /* BMFilesHierarchyUtilities.h */,
+				F401237912AC241D007FD3A2 /* BMBundleTypes.h */,
+				F40D6BA012A86938008D957A /* BMReportingUtilities.h */,
+				F4A87CE712E224BE003291BB /* BMStringUtilities.h */,
+			);
+			name = "Common Source";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* InfoPlist_Checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "InfoPlist_Checker" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfoPlist_Checker;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = ICRequirementCPU;
+			productReference = 8D5B49B6048680CD000E48DA /* InfoPlist.checker */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "InfoPlist_Checker_64" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* ICRequirementCPU */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* InfoPlist_Checker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40D6A3012A855E2008D957A /* App_InfoPlist_CheckList.plist in Resources */,
+				F41ACCAC12ABBD09000B23DB /* Framework_InfoPlist_CheckList.plist in Resources */,
+				F41ACCB012ABBD23000B23DB /* PrefPane_InfoPlist_CheckList.plist in Resources */,
+				F4B1477312BE85C9002EBFD8 /* Plugin_InfoPlist_CheckList.plist in Resources */,
+				F4A3A5DB130DDB5B001382E5 /* iOSApp_InfoPlist_CheckList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46CB3DD0E8AF82E00F0B8E2 /* BMInfoPlistCheckerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = InfoPlist;
+				WRAPPER_EXTENSION = checker;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					x86_64,
+					i386,
+					ppc,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = InfoPlist;
+				WRAPPER_EXTENSION = checker;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BMCheckerController_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				SDKROOT = macosx10.7;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BMCheckerController_Prefix.pch;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				SDKROOT = macosx10.7;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "InfoPlist_Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "InfoPlist_Checker_64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
