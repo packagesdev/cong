@@ -264,12 +264,12 @@
 								
 								tExtraData=[tExtrasDictionary objectForKey:BM_PROBLEM_EXTRA_LINE_NUMBER];
 								
-								if (tExtraData!=nil)
-								{
-									[tReportLineStart appendFormat:@"%u",[tExtraData unsignedIntValue]];
-								}
+								if (tExtraData != nil)
+									[tReportLineStart appendFormat:@":%u", [tExtraData unsignedIntValue]];
+                                else
+                                    [tReportLineStart appendString:@":1"];
 								
-								[tReportLineStart appendString:@":"];
+								[tReportLineStart appendString:@": error:"];
 								
 								(void)fprintf(stdout, "%s",[tReportLineStart UTF8String]);
 								
@@ -334,13 +334,13 @@
 								tExtrasDictionary=[tReportDictionary objectForKey:BM_PROBLEM_EXTRAS];
 								
 								tExtraData=[tExtrasDictionary objectForKey:BM_PROBLEM_EXTRA_LINE_NUMBER];
+
+                                if (tExtraData != nil)
+									[tReportLineStart appendFormat:@":%u", [tExtraData unsignedIntValue]];
+                                else
+                                    [tReportLineStart appendString:@":1"];
 								
-								if (tExtraData!=nil)
-								{
-									[tReportLineStart appendFormat:@"%u",[tExtraData unsignedIntValue]];
-								}
-								
-								[tReportLineStart appendString:@":"];
+								[tReportLineStart appendString:@": warning:"];
 								
 								(void)fprintf(stdout, "%s",[tReportLineStart UTF8String]);
 								
@@ -405,13 +405,13 @@
 								tExtrasDictionary=[tReportDictionary objectForKey:BM_PROBLEM_EXTRAS];
 								
 								tExtraData=[tExtrasDictionary objectForKey:BM_PROBLEM_EXTRA_LINE_NUMBER];
+
+                                if (tExtraData != nil)
+									[tReportLineStart appendFormat:@":%u", [tExtraData unsignedIntValue]];
+                                else
+                                    [tReportLineStart appendString:@":1"];
 								
-								if (tExtraData!=nil)
-								{
-									[tReportLineStart appendFormat:@"%u",[tExtraData unsignedIntValue]];
-								}
-								
-								[tReportLineStart appendString:@":"];
+								[tReportLineStart appendString:@": note:"];
 								
 								(void)fprintf(stdout, "%s",[tReportLineStart UTF8String]);
 								
