@@ -216,7 +216,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = Strings;
 				WRAPPER_EXTENSION = checker;
 				ZERO_LINK = YES;
@@ -232,7 +231,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ../BMCheckerController_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = Strings;
 				WRAPPER_EXTENSION = checker;
 			};
