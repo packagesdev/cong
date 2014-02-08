@@ -34,11 +34,17 @@
 #include <string.h>
 
 CF_INLINE UniChar __CFStringGetCharacterFromInlineBufferAux(CFStringInlineBuffer *buf, CFIndex idx) {
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090
+    if (buf->directUniCharBuffer) {
+#else
     if (buf->directBuffer) {
-    //if (buf->directUniCharBuffer) {
+#endif
 	if (idx < 0 || idx >= buf->rangeToBuffer.length) return 0xFFFF;
+#if __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090
+        return buf->directUniCharBuffer[idx + buf->rangeToBuffer.location];
+#else
         return buf->directBuffer[idx + buf->rangeToBuffer.location];
-        //return buf->directUniCharBuffer[idx + buf->rangeToBuffer.location];
+#endif
     }
     if (idx >= buf->bufferedRangeEnd || idx < buf->bufferedRangeStart) {
 	if (idx < 0 || idx >= buf->rangeToBuffer.length) return 0xFFFF;
